@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    font-family: "Wittgenstein", serif;
+    font-weight: bold;
+}
+
+.weather-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin: 0 0.5em;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.parameter-label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-left: 0.5em;
+}
+
+.parameter-value {
+    font-family: "Wittgenstein", serif;
+    font-weight: bold;
+    margin: 0.5em;
+
+}
+
+.detail {
+    display: flex;
+}
+
+.detail-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 1px 0.5px 0 2px black;
+}
+
+.detail-content {
+    font-size: 1em;
+    font-weight: 550;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.detail-content-value {
+    font-family: "Wittgenstein", serif;
+    font-weight: bold;
+    margin: 0.5em;
+
+}
+
+@media only screen and (max-width : 900) {
+    .weather {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+        /* Adjust margin for spacing between detail boxes */
+    }
+}

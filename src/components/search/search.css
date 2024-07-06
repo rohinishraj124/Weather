@@ -1,0 +1,82 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex container for centering */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar styles */
+.navBar {
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    width: 50em;
+    max-width: 50em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+}
+
+.description {
+    display: block;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 900px) {
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+        max-width: 100%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.css-13cymwt-control,
+.css-13cymwt-control:hover {
+    border-color: hsl(0, 0%, 70%);
+    width: 20em;
+    text-align: center;
+}
+
+h2 {
+    margin-right: 10em;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .navBar {
+        max-width: 20em;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .css-13cymwt-control,
+    .css-13cymwt-control:hover {
+        border-color: hsl(0, 0%, 70%);
+        width: 50vw;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 1em 0;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    h2 {
+        margin: 1em 0;
+    }
+
+}
