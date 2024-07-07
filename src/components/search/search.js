@@ -6,6 +6,7 @@ import { GEO_API_URL, geoApiOptions } from "../../api";
 function SearchBar({ onSearchChange }) {
     const [search, setSearch] = useState("");
     const [searchedCity, setSearchedCity] = useState(null);
+    const [inputWidth, setInputWidth] = useState("500px"); // Initial width of the input
 
     const handleOnChange = (searchData) => {
         setSearch(searchData);
@@ -17,6 +18,14 @@ function SearchBar({ onSearchChange }) {
         } else {
             setSearchedCity(null);
         }
+    };
+
+    const handleInputFocus = () => {
+        setInputWidth("500px"); // Adjust width on focus
+    };
+
+    const handleInputBlur = () => {
+        setInputWidth("300px"); // Reset width on blur
     };
 
     const loadOptions = (inputValue) => {
@@ -48,7 +57,9 @@ function SearchBar({ onSearchChange }) {
                 value={search}
                 onChange={handleOnChange}
                 loadOptions={loadOptions}
-                styles={{ width: "1000px" }}
+                onFocus={handleInputFocus}
+                onBlur={handleInputBlur}
+                styles={{ width: inputWidth }} // Dynamically set width based on inputWidth state
             />
         </nav>
     );
