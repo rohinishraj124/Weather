@@ -27,15 +27,16 @@
     color: #212121;
     flex: 1 1;
     font-weight: 600;
-    margin-left: 15px;
+    margin: 15px;
 }
 
 .description {
     cursor: inherit;
     flex: 1 1;
-    margin-right: 15px;
+    margin: 15px;
     text-align: right;
     display: block;
+    text-align: center;
 }
 
 .min-max {
@@ -74,11 +75,12 @@
 
 @media only screen and (max-width : 500px) {
     .min-max {
-        display: none;
+        display: block;
+        margin: 0 15px;
     }
 
     .description {
-        display: block;
+        display: none;
     }
 
     .icon-small {
@@ -87,10 +89,7 @@
 
 }
 
-@media only screen and (max-width : 400px) {
-    .description {
-        display: block;
-    }
+@media only screen and (max-width : 300px) {
 
     .icon-small {
         display: none;
