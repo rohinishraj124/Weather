@@ -14,6 +14,15 @@
     font-weight: bold;
 }
 
+.temperature:hover {
+    background-color: #f5f5f5;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    padding: 5px 10px;
+    border: 1px black solid;
+    box-shadow: 1px 0.5px 0 2px black;
+}
+
 .weather-description {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -22,6 +31,11 @@
     margin: 0 0.5em;
     text-align: center;
     margin-bottom: 0.5em;
+
+}
+
+.weather-description:hover {
+    font-weight: 900;
 }
 
 .parameter-label {
@@ -38,6 +52,11 @@
 
 }
 
+.parameter-label:hover,
+.parameter-value:hover {
+    font-weight: 900;
+}
+
 .detail {
     display: flex;
 }
@@ -46,12 +65,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1em;
+    justify-content: center;
+    margin: 1em 1em;
     border: 1px solid black;
     padding: 1em;
     border-radius: 1em;
     box-shadow: 1px 0.5px 0 2px black;
     width: 6em;
+    height: 3em;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.detail-box:hover {
+    width: 6.5em;
+    height: 3.5em;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.detail-box-group {
+    display: flex;
 }
 
 .detail-content {
@@ -74,7 +108,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .detail {
         flex-direction: column;
         align-items: center;
@@ -84,9 +118,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 1em 0;
-        border-radius: 0;
+        margin: 1em 1em;
+        border: 1px solid black;
+        border-radius: 1em;
 
         /* Adjust margin for spacing between detail boxes */
+    }
+
+    .detail-box-group {
+        display: flex;
     }
 }
