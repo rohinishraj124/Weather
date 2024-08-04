@@ -52,6 +52,7 @@ function SearchBar({ onSearchChange }) {
             </div>
             <h2>{searchedCity}</h2>
             <AsyncPaginate
+                id="search"
                 placeholder="Search for city"
                 debounceTimeout={600}
                 value={search}
@@ -59,7 +60,6 @@ function SearchBar({ onSearchChange }) {
                 loadOptions={loadOptions}
                 onFocus={handleInputFocus}
                 onBlur={handleInputBlur}
-                styles={{ width: inputWidth }} // Dynamically set width based on inputWidth state
             />
         </nav>
     );

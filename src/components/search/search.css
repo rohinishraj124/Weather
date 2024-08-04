@@ -21,6 +21,11 @@ body {
     border-radius: 1em;
 }
 
+#search {
+    width: 50vw;
+    text-align: center;
+}
+
 .description {
     display: block;
 }
