@@ -8,7 +8,7 @@ import { useState } from 'react';
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-  const [backgroundImage, setBackgroundImage] = useState('https://media.istockphoto.com/id/1477837346/photo/blue-sky-background-with-white-clouds.webp?b=1&s=170667a&w=0&k=20&c=mrQSUQ9x8giDk_nqOTV61njngf1BXLCG7YClgSMR7xU=');
+  const [backgroundImage, setBackgroundImage] = useState(null);
 
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");

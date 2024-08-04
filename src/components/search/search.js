@@ -58,8 +58,7 @@ function SearchBar({ onSearchChange }) {
                 value={search}
                 onChange={handleOnChange}
                 loadOptions={loadOptions}
-                onFocus={handleInputFocus}
-                onBlur={handleInputBlur}
+                styles={{ width: "1000px" }}
             />
         </nav>
     );
